@@ -1,7 +1,7 @@
 import refs from "../refs/refs";
 
 const onClickBtnToForm = () => {
-  refs.form.scrollIntoView({
+  refs.orderFormSection.scrollIntoView({
     block: "start",
     behavior: "smooth",
   });

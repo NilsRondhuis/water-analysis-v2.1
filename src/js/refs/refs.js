@@ -18,15 +18,17 @@ export default {
   listNavLink: document.querySelectorAll(".list-nav__link"),
   listSocialMenu: document.querySelector(".list-social-menu"),
 
-  heroSection: document.querySelector(".hero"),
-
-  resultSection: document.querySelector(".section-result"),
-
   favouriteListHome: document.querySelector('[data-value="home"]'),
   favouriteListSchool: document.querySelector('[data-value="school"]'),
   favouriteListCaffe: document.querySelector('[data-value="caffe"]'),
   favouriteListBussines: document.querySelector('[data-value="bussines"]'),
 
+  heroSection: document.querySelector(".hero"),
+  aboutSection: document.querySelector(".section-about"),
+  resultSection: document.querySelector(".section-result"),
+  maintenaceSection: document.querySelector(".section-maintenance"),
+  montageSection: document.querySelector(".section-montage"),
+  workSection: document.querySelector(".section-work"),
   orderFormSection: document.querySelector(".section-order-form"),
   contactsSection: document.querySelector(".section-contacts"),
 

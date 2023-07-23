@@ -19,6 +19,10 @@
 .box-content-home {
   .text {
     text-align: justify;
+
+    &.overhead {
+      font-weight: 700;
+    }
   }
 }
 
