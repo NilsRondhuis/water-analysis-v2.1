@@ -3,12 +3,11 @@
   background-size: cover, 440px;
   background-position: center, right 500px;
   background-image: linear-gradient(
-      180deg,
-      rgba(239, 252, 253, 1) 0%,
-      rgba(255, 255, 255, 0.3982843137254902) 30%,
-      rgba(255, 255, 255, 0.4010854341736695) 100%
-    ),
-    url(../images/maintenance/v2/bg-img.jpg);
+    180deg,
+    rgba(239, 252, 253, 1) 0%,
+    rgba(255, 255, 255, 0.3982843137254902) 30%,
+    rgba(255, 255, 255, 0.4010854341736695) 100%
+  );
 
   .text {
     text-align: justify;
@@ -120,7 +119,24 @@
 
 @include for-size(desktop) {
   .section-maintenance {
-    .box-content {
+    background-image: linear-gradient(
+        180deg,
+        rgba(239, 252, 253, 1) 0%,
+        rgba(255, 255, 255, 0.3982843137254902) 30%,
+        rgba(255, 255, 255, 0.4010854341736695) 100%
+      ),
+      url(../images/maintenance/v2/bg-img.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(239, 252, 253, 1) 0%,
+          rgba(255, 255, 255, 0.3982843137254902) 30%,
+          rgba(255, 255, 255, 0.4010854341736695) 100%
+        ),
+        url(../images/maintenance/v2/bg-img@2x.jpg);
     }
   }
 
