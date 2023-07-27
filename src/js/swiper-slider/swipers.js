@@ -106,7 +106,7 @@ new Swiper(".partners-swiper", {
     // when window width is >= 640px
     1200: {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 45,
     },
   },
 });
