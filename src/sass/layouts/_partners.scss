@@ -1,0 +1,8 @@
+.section-partners {
+}
+
+@include for-size(desktop) {
+  .section-partners {
+    padding-bottom: 100px;
+  }
+}

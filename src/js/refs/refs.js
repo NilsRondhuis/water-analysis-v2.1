@@ -8,6 +8,8 @@ export default {
   btnOrderCalc: document.querySelectorAll(".js-btn-order-calc"),
   btnOrderConsultation: document.querySelectorAll(".js-btn-order-consultation"),
 
+  businessSlider: document.querySelector(".js-business-swiper"),
+
   maintenanceCard: document.querySelectorAll(".js-maintenance-card"),
 
   iconMenu: document.querySelector(".icon-menu"),

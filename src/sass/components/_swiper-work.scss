@@ -1,0 +1,28 @@
+.section-work {
+  .swiper__slider-work {
+    position: relative;
+    overflow: hidden;
+
+    @include for-size(tablet) {
+      width: 50%;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      fill: var(--white);
+    }
+
+    &::after {
+      content: "";
+    }
+  }
+}

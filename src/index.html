@@ -189,7 +189,7 @@
 
     <main>
       <section class="hero hero--shadow-bottom">
-        <div class="swiper">
+        <div class="swiper hero-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swiper-slide__box swiper-slide__box--img-girl">
@@ -726,19 +726,50 @@
             Підберемо систему очищення води під ваші потреби
           </h3>
 
-          <p class="subhead">Для бізнесу:</p>
+          <p class="subhead">Для малого і великого бізнесу:</p>
 
           <div class="box-content-business">
-            <div class="box-img">
-              <img
-                src="./images/montage/item-1.jpg"
-                srcset="
-                  ./images/montage/item-1.jpg    1x,
-                  ./images/montage/item-1@2x.jpg 2x
-                "
-                loading="lazy"
-                alt="Схема очищення води для бізнесу"
-              />
+            <div class="box-slider">
+              <div class="montage-swiper js-business-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      id="1"
+                      src="./images/montage/business-slider/item-1.jpg"
+                      srcset="
+                        ./images/montage/business-slider/item-1.jpg    1x,
+                        ./images/montage/business-slider/item-1@2x.jpg 2x
+                      "
+                      alt="Схема очищення води для бізнесу"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      id="2"
+                      src="./images/montage/business-slider/item-2.jpg"
+                      srcset="
+                        ./images/montage/business-slider/item-2.jpg    1x,
+                        ./images/montage/business-slider/item-2@2x.jpg 2x
+                      "
+                      alt="Схема очищення води для великого бізнесу"
+                    />
+                  </div>
+                  <!-- <div class="swiper-slide">Slide 3</div> -->
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev">
+                  <svg class="icon">
+                    <use href="./images/svg/sprite.svg#arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg class="icon">
+                    <use href="./images/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
             </div>
             <div class="box-text">
               <p class="text">
@@ -816,7 +847,7 @@
             </div>
           </div>
 
-          <p class="subhead">Для дому:</p>
+          <p class="subhead">Для квартир та будинків:</p>
 
           <div class="box-content-home">
             <div class="box-img">
@@ -1040,7 +1071,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1049,12 +1080,12 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
+                      id="1"
                       src="./images/works/mobile/work-1.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1067,7 +1098,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1076,12 +1107,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-2.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1094,7 +1124,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1103,12 +1133,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-3.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1121,7 +1150,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1130,12 +1159,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-4.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1148,7 +1176,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1157,12 +1185,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-5.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1175,7 +1202,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1184,12 +1211,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-6.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1202,7 +1228,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1211,12 +1237,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-7.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1229,7 +1254,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1238,12 +1263,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-8.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1256,7 +1280,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1265,12 +1289,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-9.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1283,7 +1306,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1292,12 +1315,11 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-10.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1310,7 +1332,7 @@
                       "
                       media="(min-width: 1200px)"
                       sizes="(min-width: 1200px) 680px, 100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <source
                       srcset="
@@ -1319,18 +1341,89 @@
                       "
                       media="(max-width: 1199px)"
                       sizes="100vw"
-                      type="image/jpeg"
+                      type="image/jpg"
                     />
                     <img
                       src="./images/works/mobile/work-11.jpg"
                       alt="Виконана робота"
-                      loading="lazy"
                     />
                   </picture>
                 </div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev">
+                <svg class="icon">
+                  <use href="./images/svg/sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="icon">
+                  <use href="./images/svg/sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-partners">
+        <div class="container">
+          <h5 class="section-title">Ми співпрацюємо</h5>
+          <p>
+            Текст для секції партнерів, написати щось в стилі що це їх найкраще
+            рішення, дякуємо за довіру.
+          </p>
+
+          <div class="partners-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/partners/1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/6.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/7.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/8.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/9.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/10.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/partners/11.png" alt="" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <svg class="icon">
+                <use href="./images/svg/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="icon">
+                <use href="./images/svg/sprite.svg#arrow-right"></use>
+              </svg>
             </div>
           </div>
         </div>

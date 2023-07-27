@@ -2,12 +2,15 @@
 @import "./utils/mixins";
 @import "./base/common";
 @import "./components/header";
-@import "./components/swiper-slider";
+@import "./components/swiper-hero";
 @import "./components/btn";
 @import "./components/hero-cards";
 @import "./components/up-btn";
 @import "./components/table";
 @import "./components/timer";
+@import "./components/swiper-business";
+@import "./components/swiper-work";
+@import "./components/swiper-partners";
 @import "./components/list-social";
 @import "./components/form";
 @import "./components/footer";
@@ -21,6 +24,7 @@
 @import "./layouts/price";
 @import "./layouts/favourite";
 @import "./layouts/work";
+@import "./layouts/partners";
 @import "./layouts/order-form";
 @import "./layouts/contacts";
 @import "./layouts/policy";

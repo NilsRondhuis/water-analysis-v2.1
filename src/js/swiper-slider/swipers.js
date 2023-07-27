@@ -2,7 +2,7 @@ import refs from "../refs/refs";
 import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-new Swiper(".swiper", {
+new Swiper(".hero-swiper", {
   modules: [Pagination, Navigation, Autoplay],
   loop: true,
   enabled: true,
@@ -58,5 +58,55 @@ new Swiper(".swiper__slider-work", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+new Swiper(".montage-swiper", {
+  modules: [Pagination, Navigation],
+  simulateTouch: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  spaceBetween: 45,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+});
+
+new Swiper(".partners-swiper", {
+  modules: [Pagination, Navigation],
+  simulateTouch: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    767: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    // when window width is >= 640px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
   },
 });
