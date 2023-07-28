@@ -9,6 +9,7 @@ export default {
   btnOrderConsultation: document.querySelectorAll(".js-btn-order-consultation"),
 
   businessSlider: document.querySelector(".js-business-swiper"),
+  homeSlider: document.querySelector(".js-home-swiper"),
 
   maintenanceCard: document.querySelectorAll(".js-maintenance-card"),
 

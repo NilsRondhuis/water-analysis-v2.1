@@ -83,6 +83,28 @@ new Swiper(".js-business-swiper", {
   },
 });
 
+new Swiper(".js-home-swiper", {
+  modules: [Pagination, Navigation, Autoplay],
+  simulateTouch: true,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  spaceBetween: 45,
+  speed: 800,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+});
+
 new Swiper(".clients-swiper", {
   modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
