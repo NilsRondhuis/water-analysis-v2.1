@@ -78,7 +78,7 @@ new Swiper(".montage-swiper", {
   },
 });
 
-new Swiper(".partners-swiper", {
+new Swiper(".clients-swiper", {
   modules: [Pagination, Navigation],
   simulateTouch: true,
   grabCursor: true,

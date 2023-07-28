@@ -1,10 +1,8 @@
 import refs from "../refs/refs";
+import scrollIntoStart from "../common/scroll-into-start";
 
 const onClickBtnToForm = () => {
-  refs.orderFormSection.scrollIntoView({
-    block: "start",
-    behavior: "smooth",
-  });
+  scrollIntoStart(refs.orderFormSection);
 };
 
 const onClickOrderAnalysis = () => {

@@ -42,8 +42,8 @@ function observerCbHome(entries) {
   intervalCb({
     entries,
     refs: refs.favouriteListHome,
-    previosValue: 950,
-    valueLoading: document.body.clientWidth < 1199 ? 900 : 500,
+    previosValue: 1200,
+    valueLoading: document.body.clientWidth < 1199 ? 1100 : 900,
     time: document.body.clientWidth < 1199 ? 30 : 0.1,
     intervalId: intervalIdHome,
   });

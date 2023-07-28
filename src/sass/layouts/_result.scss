@@ -1,6 +1,11 @@
 .section-result {
   background-color: rgb(239 252 253);
 
+  .title-result {
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
   @include for-size(desktop) {
     background-image: url(../images/result/bg/circle-blue.png),
       url(../images/result/bg/circle-white.png),
@@ -112,13 +117,4 @@
 .result-container-table {
   margin-top: 50px;
   margin-bottom: 50px;
-}
-
-@include for-size(desktop) {
-  .section-result {
-    .title-result {
-      display: block;
-      text-align: center;
-    }
-  }
 }

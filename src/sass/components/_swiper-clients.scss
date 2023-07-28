@@ -1,5 +1,5 @@
-.section-partners {
-  .partners-swiper {
+.section-clients {
+  .clients-swiper {
     position: relative;
     overflow: hidden;
     padding: 0 0 70px 0;
@@ -22,25 +22,25 @@
   }
 
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: var(--logo-cl);
+    background-color: var(--sky-blue);
   }
 
   .swiper-pagination-bullet {
-    background-color: var(--sky-blue);
+    background-color: var(--pagination-cl);
   }
 }
 
 @include for-size(tablet) {
-  .section-partners {
-    .partners-swiper {
+  .section-clients {
+    .clients-swiper {
       padding: 0 30px 70px 30px;
     }
   }
 }
 
 @include for-size(desktop) {
-  .section-partners {
-    .partners-swiper {
+  .section-clients {
+    .clients-swiper {
       padding: 0 50px 80px 50px;
 
       .swiper-pagination {

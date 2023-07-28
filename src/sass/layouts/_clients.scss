@@ -1,0 +1,44 @@
+.section-clients {
+  background-image: linear-gradient(
+    180deg,
+    rgba(239, 252, 254, 1) 0%,
+    rgba(239, 252, 254, 0.19931722689075626) 10%,
+    rgba(239, 252, 254, 0) 20%
+  );
+
+  .section-title {
+    justify-content: center;
+  }
+
+  .overhead {
+    margin: 0 0 20px 0;
+    font-weight: 700;
+  }
+
+  .text {
+    margin: 0 0 40px 0;
+    text-align: justify;
+  }
+}
+
+@include for-size(tablet) {
+  .section-clients {
+    .text {
+      width: 70%;
+    }
+  }
+}
+
+@include for-size(desktop) {
+  .section-clients {
+    padding-bottom: 100px;
+
+    .section-title {
+      justify-content: flex-start;
+    }
+
+    .text {
+      margin: 0 0 70px 0;
+    }
+  }
+}
