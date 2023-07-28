@@ -10,6 +10,7 @@ export default {
 
   businessSlider: document.querySelector(".js-business-swiper"),
   homeSlider: document.querySelector(".js-home-swiper"),
+  workSlider: document.querySelector(".js-work-swiper"),
 
   maintenanceCard: document.querySelectorAll(".js-maintenance-card"),
 
