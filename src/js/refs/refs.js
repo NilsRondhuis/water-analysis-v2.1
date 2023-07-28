@@ -34,6 +34,7 @@ export default {
   workSection: document.querySelector(".section-work"),
   orderFormSection: document.querySelector(".section-order-form"),
   contactsSection: document.querySelector(".section-contacts"),
+  clientsSection: document.querySelector(".section-clients"),
 
   form: document.querySelector(".form"),
   inputName: document.querySelector(".js-input-name"),

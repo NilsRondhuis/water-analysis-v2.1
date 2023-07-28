@@ -61,7 +61,7 @@ new Swiper(".swiper__slider-work", {
   },
 });
 
-new Swiper(".js-business-swiper", {
+const businessSwiper = new Swiper(".js-business-swiper", {
   modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
@@ -83,7 +83,7 @@ new Swiper(".js-business-swiper", {
   },
 });
 
-new Swiper(".js-home-swiper", {
+const homeSwiper = new Swiper(".js-home-swiper", {
   modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
@@ -105,7 +105,7 @@ new Swiper(".js-home-swiper", {
   },
 });
 
-new Swiper(".clients-swiper", {
+const clientsSwiper = new Swiper(".clients-swiper", {
   modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
@@ -141,3 +141,44 @@ new Swiper(".clients-swiper", {
     },
   },
 });
+
+const observerCb = (entries, slider) => {
+  entries.forEach(({ isIntersecting }) => {
+    if (isIntersecting) {
+      slider.autoplay.start();
+    } else {
+      slider.autoplay.pause();
+    }
+  });
+};
+
+const observerSectionClients = new IntersectionObserver(
+  (entries) => {
+    observerCb(entries, clientsSwiper);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+const observerBusinessSwiper = new IntersectionObserver(
+  (entries) => {
+    observerCb(entries, businessSwiper);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+const observerHomeSwiper = new IntersectionObserver(
+  (entries) => {
+    observerCb(entries, homeSwiper);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+observerSectionClients.observe(refs.clientsSection);
+observerBusinessSwiper.observe(refs.businessSlider);
+observerHomeSwiper.observe(refs.homeSlider);

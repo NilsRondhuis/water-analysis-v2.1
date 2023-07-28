@@ -75,7 +75,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
+    padding: 20px 10px;
     width: 40%;
     height: 100%;
     background-color: var(--title-cl);
@@ -146,6 +146,12 @@
 
     .item {
       flex-basis: calc((100% - 1 * 40px) / 2);
+    }
+
+    .container-info {
+      .info {
+        font-size: 14px;
+      }
     }
   }
 }
