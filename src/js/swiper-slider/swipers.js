@@ -61,12 +61,18 @@ new Swiper(".swiper__slider-work", {
   },
 });
 
-new Swiper(".montage-swiper", {
-  modules: [Pagination, Navigation],
+new Swiper(".js-business-swiper", {
+  modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
   slideToClickedSlide: true,
   spaceBetween: 45,
+  speed: 800,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+    stopOnLastSlide: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -79,11 +85,17 @@ new Swiper(".montage-swiper", {
 });
 
 new Swiper(".clients-swiper", {
-  modules: [Pagination, Navigation],
+  modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
   slideToClickedSlide: true,
   loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+    stopOnLastSlide: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -94,16 +106,15 @@ new Swiper(".clients-swiper", {
     clickable: true,
   },
   breakpoints: {
-    // when window width is >= 320px
     767: {
       slidesPerView: 1,
     },
-    // when window width is >= 480px
+
     768: {
       slidesPerView: 2,
       spaceBetween: 15,
     },
-    // when window width is >= 640px
+
     1200: {
       slidesPerView: 3,
       spaceBetween: 45,
