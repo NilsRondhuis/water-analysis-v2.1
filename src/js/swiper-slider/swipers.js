@@ -71,7 +71,6 @@ new Swiper(".js-business-swiper", {
   autoplay: {
     delay: 2000,
     disableOnInteraction: true,
-    stopOnLastSlide: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -94,7 +93,6 @@ new Swiper(".clients-swiper", {
   autoplay: {
     delay: 2000,
     disableOnInteraction: true,
-    stopOnLastSlide: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
