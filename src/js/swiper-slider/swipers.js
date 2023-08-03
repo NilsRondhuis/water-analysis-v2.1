@@ -66,7 +66,7 @@ const businessSwiper = new Swiper(".js-business-swiper", {
   simulateTouch: true,
   grabCursor: true,
   slideToClickedSlide: true,
-  spaceBetween: 45,
+  spaceBetween: 70,
   speed: 800,
   autoplay: {
     delay: 2000,
@@ -88,7 +88,7 @@ const homeSwiper = new Swiper(".js-home-swiper", {
   simulateTouch: true,
   grabCursor: true,
   slideToClickedSlide: true,
-  spaceBetween: 45,
+  spaceBetween: 70,
   speed: 800,
   autoplay: {
     delay: 2000,
