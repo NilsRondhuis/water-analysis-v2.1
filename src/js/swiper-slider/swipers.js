@@ -48,13 +48,18 @@ new Swiper(".hero-swiper", {
   },
 });
 
-new Swiper(".swiper__slider-work", {
-  modules: [Pagination, Navigation],
+const workSwiper = new Swiper(".swiper__slider-work", {
+  modules: [Pagination, Navigation, Autoplay],
   simulateTouch: true,
   grabCursor: true,
   slideToClickedSlide: true,
   spaceBetween: 25,
   loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -179,6 +184,16 @@ const observerHomeSwiper = new IntersectionObserver(
   }
 );
 
+const observerWorkSwiper = new IntersectionObserver(
+  (entries) => {
+    observerCb(entries, workSwiper);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
 observerSectionClients.observe(refs.clientsSection);
 observerBusinessSwiper.observe(refs.businessSlider);
 observerHomeSwiper.observe(refs.homeSlider);
+observerWorkSwiper.observe(refs.workSlider);

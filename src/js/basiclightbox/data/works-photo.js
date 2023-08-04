@@ -9,6 +9,10 @@ import item8 from "../../../images/works/large/item-8.jpg";
 import item9 from "../../../images/works/large/item-9.jpg";
 import item10 from "../../../images/works/large/item-10.jpg";
 import item11 from "../../../images/works/large/item-11.jpg";
+import item12 from "../../../images/works/large/item-12.jpg";
+import item13 from "../../../images/works/large/item-13.jpg";
+import item14 from "../../../images/works/large/item-14.jpg";
+import item15 from "../../../images/works/large/item-15.jpg";
 
 import item1_2x from "../../../images/works/large/item-1@2x.jpg";
 import item2_2x from "../../../images/works/large/item-2@2x.jpg";
@@ -21,6 +25,10 @@ import item8_2x from "../../../images/works/large/item-8@2x.jpg";
 import item9_2x from "../../../images/works/large/item-9@2x.jpg";
 import item10_2x from "../../../images/works/large/item-10@2x.jpg";
 import item11_2x from "../../../images/works/large/item-11@2x.jpg";
+import item12_2x from "../../../images/works/large/item-12@2x.jpg";
+import item13_2x from "../../../images/works/large/item-13@2x.jpg";
+import item14_2x from "../../../images/works/large/item-14@2x.jpg";
+import item15_2x from "../../../images/works/large/item-15@2x.jpg";
 
 const dataWorks = [
   {
@@ -87,6 +95,30 @@ const dataWorks = [
     id: "11",
     img: item11,
     img2x: item11_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "12",
+    img: item12,
+    img2x: item12_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "13",
+    img: item13,
+    img2x: item13_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "14",
+    img: item14,
+    img2x: item14_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "15",
+    img: item15,
+    img2x: item15_2x,
     alt: "Виконана робота",
   },
 ];
