@@ -108,6 +108,7 @@
             "
             src="./images/logo/logo.png"
             width="70"
+            height="70"
             alt="Логотип компанії"
           />
           Центр очищення води
@@ -115,23 +116,25 @@
 
         <ul class="list list-nav">
           <li class="list-nav__item">
-            <a class="link list-nav__link js-link-about" href="">Про нас</a>
+            <a class="link list-nav__link js-link-about" href="/">Про нас</a>
           </li>
           <li class="list-nav__item">
-            <a class="link list-nav__link js-link-maintenance" href=""
+            <a class="link list-nav__link js-link-maintenance" href="/"
               >Обслуговування</a
             >
           </li>
           <li class="list-nav__item">
-            <a class="link list-nav__link js-link-montage" href=""
+            <a class="link list-nav__link js-link-montage" href="/"
               >Системи очищення</a
             >
           </li>
           <li class="list-nav__item">
-            <a class="link list-nav__link js-link-team" href="">Наші роботи</a>
+            <a class="link list-nav__link js-link-team" href="/">Наші роботи</a>
           </li>
           <li class="list-nav__item">
-            <a class="link list-nav__link js-link-contacts" href="">Контакти</a>
+            <a class="link list-nav__link js-link-contacts" href="/"
+              >Контакти</a
+            >
           </li>
           <li class="list-nav__item">
             <ul class="list list-social-menu">
@@ -140,6 +143,7 @@
                   href="https://instagram.com/filter.bc?utm_medium=copy_link"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Instagram"
                   onclick="window.open('https://instagram.com/filter.bc?utm_medium=copy_link')"
                   class="list-social-menu__link flex-center-center"
                 >
@@ -153,6 +157,7 @@
                   href="https://www.facebook.com/filterbc-104627348527054"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Facebook"
                   onclick="window.open('https://www.facebook.com/filterbc-104627348527054')"
                   class="list-social-menu__link flex-center-center"
                 >
@@ -169,6 +174,7 @@
           <button
             type="button"
             class="btn-header flex-center-center js-btn-menu"
+            aria-label="menu"
           >
             <svg class="icon-menu">
               <use href="./images/svg/sprite.svg#menu"></use>
@@ -177,7 +183,7 @@
               <use href="./images/svg/sprite.svg#cross"></use>
             </svg>
           </button>
-          <a class="link link-tel" href="tel:+380981100770">
+          <a class="link link-tel" href="tel:+380981100770" aria-label="phone">
             <svg class="icon-phone">
               <use href="./images/svg/sprite.svg#phone"></use>
             </svg>
@@ -648,7 +654,7 @@
                         ./images/maintenance/list/item-2@2x.jpg 2x
                       "
                       loading="lazy"
-                      alt="Обслуговування системи очищення води у будинку"
+                      alt="Ремонт системи очищення води у будинку"
                     />
                   </a>
                 </li>
@@ -668,7 +674,7 @@
                         ./images/maintenance/list/item-3@2x.jpg 2x
                       "
                       loading="lazy"
-                      alt="Обслуговування системи очищення води на підприємстві"
+                      alt="Монтаж системи очищення води на підприємстві"
                     />
                   </a>
                 </li>
@@ -767,12 +773,20 @@
 
                 <div class="swiper-pagination"></div>
 
-                <div class="swiper-button-prev">
+                <div
+                  class="swiper-button-prev"
+                  role="button"
+                  aria-label="button-left"
+                >
                   <svg class="icon">
                     <use href="./images/svg/sprite.svg#arrow-left"></use>
                   </svg>
                 </div>
-                <div class="swiper-button-next">
+                <div
+                  class="swiper-button-next"
+                  role="button"
+                  aria-label="button-right"
+                >
                   <svg class="icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
                   </svg>
@@ -880,7 +894,7 @@
                         ./images/montage/home-slider/item-2@2x.jpg 2x
                       "
                       loading="lazy"
-                      alt="Виконана робота встановлення системи у квартирі"
+                      alt="Схема великої системи очищення води для домашнього використання"
                     />
                   </div>
                   <div class="swiper-slide">
@@ -891,19 +905,27 @@
                         ./images/montage/home-slider/item-3@2x.jpg 2x
                       "
                       loading="lazy"
-                      alt="Виконана робота встановлення системи у квартирі 2"
+                      alt="Виконана робота встановлення системи у квартирі"
                     />
                   </div>
                 </div>
 
                 <div class="swiper-pagination"></div>
 
-                <div class="swiper-button-prev">
+                <div
+                  class="swiper-button-prev"
+                  role="button"
+                  aria-label="button-left"
+                >
                   <svg class="icon">
                     <use href="./images/svg/sprite.svg#arrow-left"></use>
                   </svg>
                 </div>
-                <div class="swiper-button-next">
+                <div
+                  class="swiper-button-next"
+                  role="button"
+                  aria-label="button-right"
+                >
                   <svg class="icon">
                     <use href="./images/svg/sprite.svg#arrow-right"></use>
                   </svg>
@@ -1234,7 +1256,7 @@
                     <img
                       id="6"
                       src="./images/works/mobile/work-6.jpg"
-                      alt="Виконана робота"
+                      alt="Виконана робота 123131"
                     />
                   </picture>
                 </div>

@@ -187,6 +187,7 @@
   }
 }
 .icon-phone {
+  margin-top: 7px;
   @include for-size(desktop) {
     display: none;
   }
@@ -194,8 +195,8 @@
 .icon-menu,
 .icon-cross,
 .icon-phone {
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   fill: var(--sky-blue);
 
   @media screen and (min-width: 768px) {
