@@ -13,6 +13,14 @@ import item12 from "../../../images/works/large/item-12.jpg";
 import item13 from "../../../images/works/large/item-13.jpg";
 import item14 from "../../../images/works/large/item-14.jpg";
 import item15 from "../../../images/works/large/item-15.jpg";
+import item16 from "../../../images/works/large/item-16.jpg";
+import item17 from "../../../images/works/large/item-17.jpg";
+import item18 from "../../../images/works/large/item-18.jpg";
+import item19 from "../../../images/works/large/item-19.jpg";
+import item20 from "../../../images/works/large/item-20.jpg";
+import item21 from "../../../images/works/large/item-21.jpg";
+import item22 from "../../../images/works/large/item-22.jpg";
+import item23 from "../../../images/works/large/item-23.jpg";
 
 import item1_2x from "../../../images/works/large/item-1@2x.jpg";
 import item2_2x from "../../../images/works/large/item-2@2x.jpg";
@@ -29,6 +37,14 @@ import item12_2x from "../../../images/works/large/item-12@2x.jpg";
 import item13_2x from "../../../images/works/large/item-13@2x.jpg";
 import item14_2x from "../../../images/works/large/item-14@2x.jpg";
 import item15_2x from "../../../images/works/large/item-15@2x.jpg";
+import item16_2x from "../../../images/works/large/item-16@2x.jpg";
+import item17_2x from "../../../images/works/large/item-17@2x.jpg";
+import item18_2x from "../../../images/works/large/item-18@2x.jpg";
+import item19_2x from "../../../images/works/large/item-19@2x.jpg";
+import item20_2x from "../../../images/works/large/item-20@2x.jpg";
+import item21_2x from "../../../images/works/large/item-21@2x.jpg";
+import item22_2x from "../../../images/works/large/item-22@2x.jpg";
+import item23_2x from "../../../images/works/large/item-23@2x.jpg";
 
 const dataWorks = [
   {
@@ -119,6 +135,54 @@ const dataWorks = [
     id: "15",
     img: item15,
     img2x: item15_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "16",
+    img: item16,
+    img2x: item16_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "17",
+    img: item17,
+    img2x: item17_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "18",
+    img: item18,
+    img2x: item18_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "19",
+    img: item19,
+    img2x: item19_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "20",
+    img: item20,
+    img2x: item20_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "21",
+    img: item21,
+    img2x: item21_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "22",
+    img: item22,
+    img2x: item22_2x,
+    alt: "Виконана робота",
+  },
+  {
+    id: "23",
+    img: item23,
+    img2x: item23_2x,
     alt: "Виконана робота",
   },
 ];
