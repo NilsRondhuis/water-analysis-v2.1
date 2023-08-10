@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 .logo {
   position: relative;
@@ -56,9 +57,10 @@
     padding: 130px 25px 20px 25px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0;
   }
 }
@@ -177,13 +179,16 @@
     color: rgba(34, 60, 80, 0.7);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     display: inline-block;
   }
 }
 .link-tel__number {
   @media screen and (max-width: 1199px) {
     display: none;
+  }
+  @include for-size(desktop) {
+    white-space: nowrap;
   }
 }
 .icon-phone {

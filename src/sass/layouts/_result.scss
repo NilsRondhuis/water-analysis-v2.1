@@ -57,10 +57,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -5px;
+    gap: 5px;
   }
   @include for-size(desktop) {
-    margin: -10px;
+    gap: 10px;
   }
 }
 .list-sale__item {
@@ -78,12 +78,11 @@
     }
   }
   @include for-size(tablet) {
-    margin: 5px;
-    flex-basis: calc((100% - 10px * 4) / 2);
+    margin: 0;
+    flex-basis: calc((100% - 5px * 4) / 2);
   }
   @include for-size(desktop) {
-    margin: 10px;
-    flex-basis: calc((100% - 20px * 4) / 4);
+    flex-basis: calc((100% - 10px * 4) / 4);
     transition: border-color 250ms linear;
 
     &:hover,
