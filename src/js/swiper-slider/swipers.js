@@ -147,8 +147,13 @@ const clientsSwiper = new Swiper(".clients-swiper", {
   },
 });
 
+businessSwiper.autoplay.stop();
+homeSwiper.autoplay.stop();
+workSwiper.autoplay.stop();
+
 const observerCb = (entries, slider) => {
   entries.forEach(({ isIntersecting }) => {
+    console.log(isIntersecting);
     if (isIntersecting) {
       slider.autoplay.start();
     } else {
