@@ -12,7 +12,6 @@ import "./js/basiclightbox/basiclightbox";
 import "./js/counter/counter-plus";
 import "./js/form/form";
 import "./js/form/remove-class-submit-form";
-import "./js/common/height-contacts";
 import "./js/common/scroll-into-start";
 import "./js/common/off-link";
 import "./js/btn-orders/btn-orders";

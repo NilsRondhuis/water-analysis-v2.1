@@ -77,12 +77,3 @@
     background-color: var(--white);
   }
 }
-
-@include for-size(desktop) {
-  .container-order-hero {
-    .btn-order-analysis__desktop {
-      // font-size: 16px;
-      // width: 150px;
-    }
-  }
-}
