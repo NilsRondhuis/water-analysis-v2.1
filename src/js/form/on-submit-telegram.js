@@ -20,14 +20,17 @@ const onSubmitForm = async (e) => {
   const form = e.currentTarget;
 
   const {
-    elements: { name, phone, city, text },
+    elements: { name, phone, city, text, promocode },
   } = form;
+
+  console.log(promocode.value);
 
   const data = {
     name: name.value,
     phone: phone.value,
     city: city.value,
     text: text.value,
+    promocode: promocode.value,
   };
 
   const message = submitMessage(data);
@@ -37,6 +40,7 @@ const onSubmitForm = async (e) => {
     form.reset();
     resetForm();
     success({
+      id: "success",
       title: SUCCESS_TITLE_MSG,
       text: SUCCESS_TEXT_MSG,
       delay: 5000,

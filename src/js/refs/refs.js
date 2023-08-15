@@ -45,6 +45,13 @@ export default {
   inputCity: document.querySelector(".js-input-city"),
   labelCity: document.querySelector(".js-label-city"),
   formMessage: document.querySelector(".js-form-message"),
+  inputPromocode: document.querySelector(".js-input-promocode"),
+
+  fieldPromocode: document.querySelector(".js-promocode"),
+  modalPromocode: document.querySelector(".js-promocode-modal"),
+  btnClosePromocode: document.querySelector(".js-close-modal-promocode"),
+  btnCopy: document.querySelector(".js-copy-btn-promocode"),
+  backdrop: document.querySelector(".backdrop-promocode"),
 
   btnUp: document.querySelector(".up-btn"),
 

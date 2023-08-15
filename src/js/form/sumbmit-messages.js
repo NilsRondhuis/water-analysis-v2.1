@@ -3,7 +3,9 @@ export const submitMessage = (data) => {
   message += `<b>Ім'я: </b>${data.name}\n`;
   message += `<b>Телефон: </b>${data.phone}\n`;
   message += `<b>Населений пункт: </b>${data.city}\n`;
-  message += `<b>Коментар: </b>${data.text}`;
+  message += `<b>Коментар: </b>${data.text}\n`;
+  message += `<b>Промокод: </b>${data.promocode}`;
+
   return message;
 };
 

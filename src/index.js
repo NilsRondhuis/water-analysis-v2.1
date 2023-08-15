@@ -17,4 +17,5 @@ import "./js/common/off-link";
 import "./js/btn-orders/btn-orders";
 import "./js/btn-up/btn-up";
 import "./js/form/on-submit-telegram";
+import "./js/basiclightbox/notification";
 import "./js/copy-year/copy-year";

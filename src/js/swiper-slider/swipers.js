@@ -154,7 +154,6 @@ clientsSwiper.autoplay.stop();
 
 const observerCb = (entries, slider) => {
   entries.forEach(({ isIntersecting }) => {
-    console.log(isIntersecting);
     if (isIntersecting) {
       slider.autoplay.start();
     } else {
