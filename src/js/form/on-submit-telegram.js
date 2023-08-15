@@ -44,7 +44,8 @@ const onSubmitForm = async (e) => {
       sticker: false,
       maxTextHeight: null,
     });
-  } catch {
+  } catch (e) {
+    console.log(e);
     error({
       title: ERROR_TITLE_MSG,
       text: ERROR_TEXT_MSG,

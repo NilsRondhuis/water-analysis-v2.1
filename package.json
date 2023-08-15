@@ -4,9 +4,10 @@
   "description": "",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
+  "type": "module",
   "scripts": {
     "start": "parcel --no-cache",
-    "build": "parcel build --no-cache"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
