@@ -8,6 +8,8 @@ export default {
   btnOrderCalc: document.querySelectorAll(".js-btn-order-calc"),
   btnOrderConsultation: document.querySelectorAll(".js-btn-order-consultation"),
 
+  accordionItems: document.querySelectorAll(".accordion-item-js"),
+
   businessSlider: document.querySelector(".js-business-swiper"),
   homeSlider: document.querySelector(".js-home-swiper"),
   workSlider: document.querySelector(".js-work-swiper"),

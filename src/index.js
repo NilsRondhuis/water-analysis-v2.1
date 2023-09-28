@@ -8,6 +8,7 @@ import "./js/swiper-slider/swipers";
 import "./js/refs/refs";
 import "./js/menu/menu";
 import "./js/menu/scrollInto";
+import "./js/accordion/accordion";
 import "./js/basiclightbox/basiclightbox";
 import "./js/counter/counter-plus";
 import "./js/form/form";

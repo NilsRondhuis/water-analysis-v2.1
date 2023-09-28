@@ -6,6 +6,14 @@
     justify-content: center;
   }
 
+  .text {
+    margin: 0 0 30px 0;
+
+    @include for-size(desktop) {
+      width: 79%;
+    }
+  }
+
   @include for-size(desktop) {
     background-image: url(../images/result/bg/circle-blue.png),
       url(../images/result/bg/circle-white.png),
@@ -119,5 +127,111 @@
 
   @include for-size(desktop) {
     margin-bottom: 70px;
+  }
+}
+
+.questions-title {
+  margin: 0 0 40px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--title-cl);
+
+  @include for-size(desktop) {
+    margin: 0 0 50px 0;
+    font-size: 32px;
+    line-height: 1.16;
+  }
+}
+
+.list-questions {
+  margin-bottom: 60px;
+
+  .item {
+    position: relative;
+    padding: 20px;
+    background-color: #b1f7ff;
+    border: none;
+    border-radius: 18px;
+    transition: all 250ms ease;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &.active {
+      background-color: var(--white);
+    }
+  }
+
+  .item .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .question {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .open-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: var(--logo-cl);
+    }
+  }
+}
+
+@include for-size(tablet) {
+  .list-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      width: 650px;
+    }
+  }
+}
+
+@include for-size(desktop) {
+  .questions-title {
+    margin: 0 0 75px 0;
+  }
+
+  .desktop-box {
+    position: relative;
+    height: 405px;
+  }
+
+  .list-questions {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+
+    .item {
+      width: 750px;
+      padding: 30px;
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
   }
 }
