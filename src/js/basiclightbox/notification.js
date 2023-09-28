@@ -1,5 +1,7 @@
 import refs from "../refs/refs";
 
+const TIMEOUT_FIRST_VISIT = 30000;
+
 const showModalPromocode = () => {
   const isVisit = localStorage.getItem("second-visit");
 
@@ -12,7 +14,7 @@ const showModalPromocode = () => {
   setTimeout(() => {
     refs.backdrop.classList.add("backdrop-promocode__is-show");
     refs.modalPromocode.classList.add("promocode-modal__is-show");
-  }, 1000);
+  }, TIMEOUT_FIRST_VISIT);
 };
 
 const onCloseModalAndBackdrop = () => {
