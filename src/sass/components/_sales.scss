@@ -1,0 +1,144 @@
+.sales {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 100%;
+  background-color: rgb(244, 154, 154);
+  background-image: linear-gradient(
+    0deg,
+    rgba(231, 113, 112, 1) 0%,
+    rgba(214, 98, 97, 1) 40%,
+    rgba(211, 43, 42, 1) 100%
+  );
+  background-repeat: no-repeat;
+  z-index: 222;
+  overflow: hidden;
+}
+
+.sales__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.slaes__snow1,
+.slaes__snow2,
+.slaes__snow3,
+.slaes__snow4 {
+  display: none;
+}
+
+@media screen and (min-width: 420px) {
+  .sales__text {
+    font-size: 16px;
+  }
+}
+
+@include for-size(tablet) {
+  .sales__text {
+    font-size: 18px;
+  }
+
+  .slaes__snow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/ny-sales/snow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+
+  .slaes__snow1 {
+    left: 10%;
+    width: 32px;
+    height: 32px;
+    animation-name: snow1;
+    animation-duration: 4s;
+  }
+
+  .slaes__snow2 {
+    left: 25%;
+    width: 28px;
+    height: 28px;
+    animation-name: snow2;
+    animation-duration: 3s;
+  }
+
+  .slaes__snow3 {
+    left: auto;
+    right: 10%;
+    width: 32px;
+    height: 32px;
+    animation-name: snow3;
+    animation-duration: 3.2s;
+  }
+
+  .slaes__snow4 {
+    left: auto;
+    right: 25%;
+    width: 30px;
+    height: 30px;
+    animation-name: snow4;
+    animation-duration: 4.2s;
+  }
+
+  @keyframes snow1 {
+    0% {
+      transform: translateY(-200%);
+    }
+
+    100% {
+      transform: translateY(300%);
+    }
+  }
+  @keyframes snow2 {
+    0% {
+      transform: translateY(-200%);
+    }
+
+    100% {
+      transform: translateY(300%);
+    }
+  }
+  @keyframes snow3 {
+    0% {
+      transform: translateY(-200%);
+    }
+
+    100% {
+      transform: translateY(300%);
+    }
+  }
+  @keyframes snow4 {
+    0% {
+      transform: translateY(-200%);
+    }
+
+    100% {
+      transform: translateY(300%);
+    }
+  }
+}
+
+@include for-size(desktop) {
+  .sales {
+    padding: 10px 30px;
+  }
+
+  .sales__text {
+    font-size: 24px;
+  }
+}

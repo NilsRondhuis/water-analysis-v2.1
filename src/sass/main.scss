@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/common";
+@import "./components/sales";
 @import "./components/header";
 @import "./components/swiper-hero";
 @import "./components/btn";
@@ -15,7 +16,6 @@
 @import "./components/footer";
 @import "./components/pnotify";
 @import "./components/container-for-btn";
-@import "./components/notification";
 @import "./layouts/hero";
 @import "./layouts/about";
 @import "./layouts/result";
